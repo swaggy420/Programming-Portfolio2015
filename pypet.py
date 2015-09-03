@@ -1,5 +1,4 @@
 print 'Welcome to Pypet!'
-
 name = ' Jerry'
 age = 6
 weight = 1.5
@@ -30,29 +29,37 @@ cat = {
 	'age': 5,
 	'photo': '(=^o.o^=)__',
 }
-print 'Hello' + cat['name']
-print cat ['photo']
 
-print cat
+mouse = {
+	'name': 'Jerry',
+	'age': 6,
+	'weight': 1.5,
+	'hungry': False,
+	'photo': '<:3 )~~~~~'
+}
 
-def feed(pet):
-	pet['hungry'] = False
+pets = [cat, mouse]
 
 
-feed(cat)
+
 def feed(pet):
 	if pet['hungry'] == True:
 		pet['hungry'] = False
 		pet['weight'] = pet['weight'] + 1
+		print 'omnomom'
 	else:
 		print 'The Pypet is not hungry'
 
-pets = [cat, mouse]
-
 for pet in pets:
+	print '------------------------------'
+	print 'Hello ' + pet ['name'] + '!'
+	print pet ['photo']
+	print 'Weight: ' + str(pet['weight'])
 	feed(pet)
-	print pet
+	print 'Weight: ' + str(pet['weight'])
+	print '------------------------------'
 
 print cat
 feed(cat)
 print cat
+feed(cat)
