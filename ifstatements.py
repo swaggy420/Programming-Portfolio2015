@@ -1,5 +1,5 @@
 # learning about if statements.
-number = int(raw_input("Enter your age "))
+number = int(raw_input("Enter your age: "))
 
 if number < 5:
 	print "you are not in school"
