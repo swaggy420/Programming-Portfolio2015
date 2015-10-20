@@ -73,8 +73,32 @@ def main_arithmetic():
 	print "test calculate(1, 2, 3, 4, 5): ", calculate(1, 2, 3, 4, 5)
 	print "test ratio(3.2 7.8): ", ratio(3.2, 7.8)
 	print "test pythagoras(3, 4): ", pythagoras(3, 4)
+
+def reverse(zack):
+	return not zack
+
+def band(a, b):
+	if a==True and b==True:
+		return True
+	else: 
+		return False
+
+def bor(a, b):
+	return a or b	
+
+def main_boolean():
+	print "test reverse(True): ", reverse(True)
+	print "test reverse(False): ", reverse(False)
+	print "test reverse(1): ", reverse(1)
+	print "test reverse(0): ", reverse(0)
+	print "test reverse(18): ", reverse(18)
+	print "test band(True, True): ", band(True,True)
+	print "test bor(True, False): ",bor(True, False)
+
+
 def main():
 	main_function()
 	main_arithmetic()
+	main_boolean()
 	
 main()
