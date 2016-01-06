@@ -368,7 +368,14 @@ def slice_of_life(str):
 def slice_of_heaven(str, num):
 	return str[num:num+4]
 
+def slice_of_perfection(str, n1, n2):
+	return str[n1:n1+n2]
+
+def length(str):
+	return len(str)
+
 def main_strings():
+	print "       "
 	print "testing hello(): ", hello()
 	print "testing nothing(): ", nothing()
 	print "testing second_letter('cheese'): ", second_letter('cheese')
@@ -377,6 +384,122 @@ def main_strings():
 	print "testing beauty('sleeping'): ", beauty('sleeping')
 	print "testing slice_of_life('bread'): ", slice_of_life('bread')
 	print "testing slice_of_heaven('heavenly', 3): ", slice_of_heaven('heavenly', 3)
+	print "testing slice_of_perfection('trees tacobell moosetracks', 7, 6): ", slice_of_perfection('trees tacobell moosetracks', 7, 6)
+	print "testing length('the nile'): ", length('the nile')
+
+def short_list():
+	return [1, 2, 3]
+
+def hollow():
+	return []
+
+def third_value(a):
+	return a[2]
+
+def one_value(list, pos):
+	return list[pos]
+
+def add_list(a, b):
+	return a + b 
+
+def pie(somelist):
+	return somelist + [314]
+
+def grow_one(listy, item):
+	listy.append(item)
+	return listy
+
+def sub_list(z):
+	return z[1:5]
+
+def sub_list2(z, n):
+	return z[n: n+3]
+
+def sub_list3(z, n1, n2):
+	return z[n1: n1+n2]
+
+def list_length(a):
+	return len(a)
+
+def main_list():
+	print "       "
+	print "testing short_list(): ", short_list()
+	print "testing hollow(): ", hollow()
+	a = ['Alvey', 'Kanye', 'Trump', 'swift', 'North', 'Ellen']
+	b = ['Obama', 'Will-I-am', 'seinfield', 'Fergie', 'Elmo', 'Wierd-Al']
+	hit = ['Brett', 'Connor', 'Jeff', 'Jacob', 'Kincade', 'Chandler']
+	print "testing third_value(a): ", third_value(a)
+	print "testing one_value(a, 5): ", one_value(a, 5)
+	print "testing add_list(a, b): ", add_list(a, b)
+	print "testing pie(a): ", pie(a)
+	print "testing grow_one(b): ", grow_one(b, 'kermit')
+	print "testing sub_list(a): ", sub_list(a)
+	print "testing sub_list2(hit, 1): ", sub_list2(hit, 1)
+	print "testing sub_list3(hit, 2, 5): ", sub_list3(hit, 2, 5)
+	print "testing list_length(hit): ", list_length(hit)
+
+def list_total(numbers):
+	total = 0
+	for number in numbers:
+		total += number
+	return total
+
+def list_total2(numbers):
+	total = 0
+	for number in numbers:
+		if number % 2 == 0:
+			total += number
+	return total
+
+def list_total3(numbers):
+	total = 0
+	for i in range(1, len(numbers), 3):
+		total += numbers [i]
+	return total
+
+def is_lowercase(letter):
+	alpha = "abcdefghijklmnopqrstuvwxyz"
+	return letter in alpha
+
+
+def string_lower_count(str):
+	count = 0
+	for c in str:
+		if is_lowercase(c):
+			count += 1
+	return count
+
+def is_digit(char):
+	digits = "0123456789"
+	return char in digits
+
+def string_digit_count(str):
+	count = 0
+	for c in str:
+		if is_digit(c):
+			count += 1
+	return count
+
+def is_letter(char):
+	alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	return char in alpha
+def string_word_count(sentence):
+	count = 0
+	for i in range(len(sentice)):
+		if sentence[i] == ' ' and is_letter(sentence[i+1])
+		count += 1
+	return count
+
+def main_sequence_loops():
+	print "      "
+	class_iqs = [150, 100, 600, 2, 300000000, 28, 130, 98, 6, 21]
+	lucky = [13, 7, 21, 12, 14, 32, 33, 11, 3, 777, 88, 69, 35, 99]
+	print "testing list_total(class_iqs): ", list_total(class_iqs)
+	print "testing list_total2(lucky): ", list_total2(lucky)
+	print "testing list_total3(lucky): ", list_total3(lucky)
+	print "testing string_lower_count('Alvey is Handsome'): ", string_lower_count('Alvey is Handsome')
+	print "testing string_digit_count('R2-D2'): ", string_digit_count('R2-D2')
+	print "testing string_word_count('I am a doctor of modern medicine'): ", string_word_count('I am a doctor of modern medicine')
 
 def main():
 	main_function()
@@ -386,5 +509,6 @@ def main():
 	main_conditionals()
 	main_counted_loops()
 	main_strings()
-	
+	main_list()
+	main_sequence_loops()
 main()
