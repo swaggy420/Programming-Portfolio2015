@@ -28,7 +28,7 @@ def main():
 			print ("Thanks for playing!")
 			return
 		elif again == "yes":
-			print ("Lets play again!")
+			print ("Lets play!")
 			madlib()
 		else:
 			print ("Type yes or no")
