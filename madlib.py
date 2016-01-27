@@ -7,12 +7,12 @@ def madlib():
 	verb = raw_input("type in verb: ")
 	relname = raw_input("type in relative's name: ")
 	noun = raw_input("type in noun: ")
-	liquid = raw_input(" a liquid: ")
+	liquid = raw_input("a liquid: ")
 	ingverb = raw_input("verb ending in -ing: ")
 	bodypart = raw_input("body part: ")
-	pluralnoun = raw_input(" plural noun: ")
-	ingverb2 = raw_input(" ]verb ending in -ing: ")
-	noun2 = raw_input(" another noun: ")
+	pluralnoun = raw_input("plural noun: ")
+	ingverb2 = raw_input("verb ending in -ing: ")
+	noun2 = raw_input("another noun: ")
 
 	print "it was a " + adjective1 + ", cold November day. I woke up to the " + adjective2 + \
  	" smell of " + typeofbird + " roasting in the " + roominhouse + " downstairs. I " + pastverb + \
