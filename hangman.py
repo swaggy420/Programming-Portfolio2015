@@ -1,16 +1,17 @@
 import random
 
 def get_words():
-	# read words.txt file and return
-	text_file = open("dicwords.txt","r")
-		lines = text_file.readlines()
-	# all the words in a list
-	pass
-    
+	words = []
+	
+	file = open("dicwords.txt", "r")
+	for line in file:
+		words.append(line.strip())
+		
+	return words
 
 def pick_word(words):
     # Pick a random word from the list of words
-    
+    print(random.choice(words))
 
 def new_game(words):
 	# Create a game list that stores all
